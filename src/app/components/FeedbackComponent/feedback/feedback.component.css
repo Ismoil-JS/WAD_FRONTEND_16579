@@ -1,0 +1,33 @@
+.FeedbackContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.Details {
+  margin-right: 5px;
+  padding: 10px;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 5px;
+}
+.Edit {
+  margin-right: 5px;
+  padding: 10px;
+  color: white;
+  background-color: cadetblue;
+  border-radius: 5px;
+}
+.Delete {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+}
+.Create {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: darkgreen;
+  margin-right: 450px;
+}

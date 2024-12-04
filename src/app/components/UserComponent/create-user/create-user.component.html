@@ -1,0 +1,42 @@
+<div class="p-8 mt-8 flex justify-center">
+  <form class="shadow border w-4/12 p-4">
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>First Name </mat-label>
+        <input
+          matInput
+          name="firstName"
+          type="text"
+          [(ngModel)]="createUser.firstName"
+          required
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>Last Name </mat-label>
+        <input
+          matInput
+          name="lastName"
+          type="text"
+          [(ngModel)]="createUser.lastName"
+          required
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>User Name </mat-label>
+        <input
+          matInput
+          name="email"
+          [(ngModel)]="createUser.username"
+          required
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex justify-center">
+      <button mat-raised-button color="primary" (click)="create()">Save</button>
+    </div>
+  </form>
+</div>

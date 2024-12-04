@@ -1,0 +1,22 @@
+<div class="p-8 mt-8 flex justify-center">
+  <form class="shadow w-4/12 p-4">
+    <div class="flex">
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Edit Feedback</mat-label>
+        <textarea
+          matInput
+          [(ngModel)]="editFeedback.comment"
+          name="feedbackComment"
+          rows="3"
+        ></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="SaveButton flex justify-around">
+      <button mat-raised-button color="warn" (click)="toFeedbackList()">
+        Cancel
+      </button>
+      <button mat-raised-button color="primary" (click)="update()">Save</button>
+    </div>
+  </form>
+</div>

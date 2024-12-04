@@ -1,0 +1,30 @@
+<div class="p-8 mt-8 flex justify-center">
+  <form class="shadow w-4/12 p-4">
+    <div class="flex">
+      <mat-form-field class="field">
+        <mat-label>Select User</mat-label>
+        <mat-select [(ngModel)]="UserId" name="userId">
+          <mat-option *ngFor="let user of Users" [value]="user.id">
+            {{ user.username }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="flex">
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Write Feedback</mat-label>
+        <textarea
+          matInput
+          [(ngModel)]="createFeedback.comment"
+          name="feedbackComment"
+          rows="3"
+        ></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="SaveButton">
+      <button mat-raised-button color="primary" (click)="create()">Save</button>
+    </div>
+  </form>
+</div>
